@@ -1,0 +1,15 @@
+{
+  "name": "post-office-deneme",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "concurrently \"npm run start-client\" \"npm run start-server\"",
+    "start-client": "cd client && npm start",
+    "start-server": "cd server && node server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
