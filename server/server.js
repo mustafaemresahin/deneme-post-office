@@ -10,7 +10,7 @@ http.createServer((req, res) => {
     // Define response for the '/data' route
     if (req.url === '/data') {
         res.writeHead(200, { 'Content-Type': 'application/json' });
-        res.end(JSON.stringify({ message: "Hello from the backend!" }));
+        res.end(JSON.stringify({ message: `Hello from the backend! Server running on ${port}` }));
     } else {
         // Handle 404
         res.writeHead(404);
