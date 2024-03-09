@@ -3,8 +3,7 @@
   "version": "1.0.0",
   "description": "A full-stack application for a post office management system.",
   "scripts": {
-    "start": "concurrently \"npm run server\" \"npm run client\"",
-    "server": "node server/server.js",
+    "start": "npm run client",
     "client": "cd client && npm start",
     "install-client": "cd client && npm install",
     "build-client": "cd client && npm run build",
@@ -13,9 +12,6 @@
   },
   "engines": {
     "node": "20.x"
-  },
-  "dependencies": {
-    "concurrently": "^8.2.2"
   },
   "author": "Mustafa Sahin",
   "license": "ISC"
