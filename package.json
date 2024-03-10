@@ -3,7 +3,8 @@
   "version": "1.0.0",
   "description": "A full-stack application for a post office management system.",
   "scripts": {
-    "start": "npm run client",
+    "start": "concurrently \"npm run server\" \"npm run client\"",
+    "server": "cd server && npm start",
     "client": "cd client && npm start",
     "install-client": "cd client && npm install",
     "build-client": "cd client && npm run build",
